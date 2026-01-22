@@ -7,17 +7,17 @@ Katseye_points=0
 KendrickLamar_points=0
 Drake_points=0
 
-answer1=input("How would you discribe yourself A-funny, B-nice, C-problematic, D-selfcentered")
-if answer1== "A" or "a":
+answer1=input("How would you describe yourself A-funny, B-nice, C-problematic, D-selfcentered")
+if answer1== "A" or answer1=="a":
     SZA_points+=1
     Katseye_points+=1
-elif answer1== "B" or "b":
+elif answer1== "B" or answer1=="b":
     Laufey_points+=1
     OliviaRodrigo_points+=1
-elif answer1== "C" or "c":
+elif answer1== "C" or answer1=="c":
     KendrickLamar_points+=1
     Drake_points+=1
-elif answer1== "D" or "d":
+elif answer1== "D" or answer=="d":
     SabrinaCarpenter_points+=1
     Tylerthecreator_points+=1
 
@@ -25,10 +25,9 @@ answer2=input("What do you do for fun? A-Dance, B-Play sports, C-Watch TV, D-Sin
 if answer2== "A" :
     Katseye_points+=1
     Tylerthecreator_points+=1
-elif answer2== "B":
+elif answer2== "B"or answer2=="C":
     Drake_points+=1
     SZA_points+=1
-elif answer2== "C":
     KendrickLamar_points+=1
 elif answer2== "D":
     Laufey_points+=1
@@ -41,7 +40,7 @@ if answer3== "A":
     Katseye_points+=1
     SZA_points+=1
     Tylerthecreator_points+=1
-elif answer3== "B":
+elif answer3== "B" or answer3=="A":
     SabrinaCarpenter_points+=1
     OliviaRodrigo_points+=1
 elif answer3== "C":
@@ -83,19 +82,19 @@ elif answer5=="D":
 print(f"Your score is {SZA_points}sza, {Tylerthecreator_points}tyler, {Katseye_points}katseye, {OliviaRodrigo_points}olivia, {SabrinaCarpenter_points}sabrina, {KendrickLamar_points} kendrick, {Drake_points}drake, {Laufey_points}laufey")
 
 # endofquiz:
-if SZA_points>Tylerthecreator_points and SZA_points>Laufey_points and SZA_points>SabrinaCarpenter_points and SZA_points>Katseye_points and SZA_points>OliviaRodrigo_points and SZA_points>Drake_points and SZA_points>KendrickLamar_points :
+if SZA_points>=Tylerthecreator_points and SZA_points>=Laufey_points and SZA_points>=SabrinaCarpenter_points and SZA_points>=Katseye_points and SZA_points>=OliviaRodrigo_points and SZA_points>=Drake_points and SZA_points>=KendrickLamar_points :
     print ("You got SZA. You are athletic, pretty, nice and very talented")
-elif Tylerthecreator_points>SZA_points and Tylerthecreator_points>Laufey_points and Tylerthecreator_points>SabrinaCarpenter_points and Tylerthecreator_points>Katseye_points and Tylerthecreator_points>OliviaRodrigo_points and Tylerthecreator_points>Drake_points and Tylerthecreator_points>KendrickLamar_points:
+elif Tylerthecreator_points>=SZA_points and Tylerthecreator_points>=Laufey_points and Tylerthecreator_points>=SabrinaCarpenter_points and Tylerthecreator_points>=Katseye_points and Tylerthecreator_points>=OliviaRodrigo_points and Tylerthecreator_points>=Drake_points and Tylerthecreator_points>=KendrickLamar_points:
     print ("You got Tyler the creator. You are probably funny, smart and have a good sense of humor")
-elif Laufey_points>SZA_points and Laufey_points>Tylerthecreator_points and Laufey_points>SabrinaCarpenter_points and Laufey_points>Katseye_points and Laufey_points>OliviaRodrigo_points and Tylerthecreator_points>Drake_points and Tylerthecreator_points>KendrickLamar_points:
+elif Laufey_points>=SZA_points and Laufey_points>=Tylerthecreator_points and Laufey_points>=SabrinaCarpenter_points and Laufey_points>=Katseye_points and Laufey_points>=OliviaRodrigo_points and Tylerthecreator_points>=Drake_points and Tylerthecreator_points>=KendrickLamar_points:
     print ("You got Laufey. You're probably very smart, relaxed and caring")
-elif SabrinaCarpenter_points>SZA_points and SabrinaCarpenter_points>Tylerthecreator_points and SabrinaCarpenter_points>Laufey_points and SabrinaCarpenter_points>Katseye_points and SabrinaCarpenter_points>OliviaRodrigo_points and SabrinaCarpenter_points>Drake_points and SabrinaCarpenter_points>KendrickLamar_points:
+elif SabrinaCarpenter_points>=SZA_points and SabrinaCarpenter_points>=Tylerthecreator_points and SabrinaCarpenter_points>=Laufey_points and SabrinaCarpenter_points>=Katseye_points and SabrinaCarpenter_points>=OliviaRodrigo_points and SabrinaCarpenter_points>=Drake_points and SabrinaCarpenter_points>=KendrickLamar_points:
     print("you got sabrina carprenter. You are probably a good singer and a funny person")
-elif Katseye_points>SZA_points and Katseye_points>Tylerthecreator_points and Katseye_points>Laufey_points and Katseye_points>SabrinaCarpenter_points and Katseye_points>OliviaRodrigo_points and Katseye_points>Drake_points and Katseye_points>KendrickLamar_points:
+elif Katseye_points>=SZA_points and Katseye_points>=Tylerthecreator_points and Katseye_points>=Laufey_points and Katseye_points>=SabrinaCarpenter_points and Katseye_points>=OliviaRodrigo_points and Katseye_points>=Drake_points and Katseye_points>=KendrickLamar_points:
     print("You got katseye. You are very passionate about dancing and you're very funny")
-elif OliviaRodrigo_points>SZA_points and OliviaRodrigo_points>Tylerthecreator_points and OliviaRodrigo_points>Laufey_points and OliviaRodrigo_points>Katseye_points and OliviaRodrigo_points>SabrinaCarpenter_points and OliviaRodrigo_points>Drake_points and OliviaRodrigo_points>KendrickLamar_points:
+elif OliviaRodrigo_points>=SZA_points and OliviaRodrigo_points>=Tylerthecreator_points and OliviaRodrigo_points>=Laufey_points and OliviaRodrigo_points>=Katseye_points and OliviaRodrigo_points>=SabrinaCarpenter_points and OliviaRodrigo_points>=Drake_points and OliviaRodrigo_points>=KendrickLamar_points:
     print ("You got Olivia Rodrigo, you are very nice, talented, and a bit shy")
-elif Drake_points>SZA_points and Drake_points>Tylerthecreator_points and Drake_points>Laufey_points and Drake_points>SabrinaCarpenter_points and Drake_points>Katseye_points and Drake_points>OliviaRodrigo_points and Drake_points>KendrickLamar_points:
+elif Drake_points>=SZA_points and Drake_points>=Tylerthecreator_points and Drake_points>=Laufey_points and Drake_points>=SabrinaCarpenter_points and Drake_points>=Katseye_points and Drake_points>=OliviaRodrigo_points and Drake_points>=KendrickLamar_points:
     print ("You got drake. You like sports and kids.")
-elif KendrickLamar_points>SZA_points and KendrickLamar_points>Tylerthecreator_points and KendrickLamar_points>Laufey_points and KendrickLamar_points>SabrinaCarpenter_points and KendrickLamar_points>Katseye_points and KendrickLamar_points>OliviaRodrigo_points and KendrickLamar_points>Drake_points:
+elif KendrickLamar_points>=SZA_points and KendrickLamar_points>=Tylerthecreator_points and KendrickLamar_points>=Laufey_points and KendrickLamar_points>=SabrinaCarpenter_points and KendrickLamar_points>=Katseye_points and KendrickLamar_points>=OliviaRodrigo_points and KendrickLamar_points>=Drake_points:
     print ("You got kendrick lamar, you are probably a hater, but skilled")
